@@ -1,12 +1,12 @@
-/* App.css */
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Syne', sans-serif;
+  background-color: #E5F2FF;
   color: #333;
 }
 
-/* Navbar */
+
 .navbar {
   background-color: #2d3748;
   height: 80px;
@@ -18,7 +18,7 @@ body {
   z-index: 50;
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   background-color: #1a202c;
@@ -42,7 +42,7 @@ body {
   z-index: 10;
 }
 
-/* Property Grid */
+
 .property-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -135,7 +135,7 @@ body {
   }
 }
 
-/* Footer */
+
 .footer {
   background-color: #2d3748;
   color: white;
@@ -144,7 +144,7 @@ body {
   margin-top: 4rem;
 }
 
-/* Floating Preview Button */
+
 .preview-nav {
   position: fixed;
   bottom: 1rem;
@@ -154,4 +154,30 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 50;
+}
+
+.vaibhav:hover{
+  color: black;
+  text-decoration: none;
+}
+.vaibhav{
+  text-decoration: none;
+}
+.vaibhav2:hover{
+  background-color: #381664;
+  color:white;
+  text-decoration:none;
+
+}
+
+.vaibhav2{
+  text-decoration: none;
+  background:none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  border: 0.5px solid #381664;
+  overflow: hidden;
+  
+  
+
 }
