@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='navbar' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px' ,background:'#E5F2FF',fontFamily: 'Roboto, sans-serif',fontWeight:'bolder',color:'#381664',borderBottom:"1px solid black",borderRadius:'10px',width:'auto'}}>
+    <nav className='navbar' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px' ,background:'#F5F7FA',fontFamily: 'Roboto, sans-serif',fontWeight:'bolder',color:'#381664',borderBottom:"1px solid black",borderRadius:'10px',width:'auto'}}>
       <h1 
       style={{ fontSize: '2rem', fontWeight: 'bold', lineHeight: '100%', letterSpacing: '-4%', textAlign: 'left' }}>
       HomeHarbor</h1>
