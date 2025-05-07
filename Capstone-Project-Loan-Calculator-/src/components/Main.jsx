@@ -145,7 +145,64 @@ const Main = () => {
           </p>
         </div>
         </div>
-     </div>
+        <div>
+          <div style={{ border: '1px solid #ccc', borderRadius: '10px', padding: '1rem', margin: '2rem auto', width: '50%', backgroundColor: '#f9f9f9' }}>
+            <h2>Contact Us</h2>
+            <form style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem', width: 'auto', margin: '0 auto' }}>
+              <input
+                type="text"
+                placeholder="Your Name"
+                style={{
+                  padding: '0.5rem',
+                  borderRadius: '5px',
+                  border: '1px solid #ccc',
+                  fontFamily: 'Roboto, sans-serif',
+                  fontSize: '1rem',
+                }}
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                style={{
+                  padding: '0.5rem',
+                  borderRadius: '5px',
+                  border: '1px solid #ccc',
+                  fontFamily: 'Roboto, sans-serif',
+                  fontSize: '1rem',
+                }}
+              />
+              <textarea
+                placeholder="Your Message"
+                rows="5"
+                style={{
+                  padding: '0.5rem',
+                  borderRadius: '5px',
+                  border: '1px solid #ccc',
+                  fontFamily: 'Roboto, sans-serif',
+                  fontSize: '1rem',
+                }}
+              ></textarea>
+              <button
+                type="submit"
+                style={{
+                  padding: '0.7rem',
+                  borderRadius: '5px',
+                  border: 'none',
+                  backgroundColor: '#381664',
+                  color: 'white',
+                  fontFamily: 'Syne, sans-serif',
+                  fontWeight: 'bold',
+                  fontSize: '1rem',
+                  cursor: 'pointer',
+                }}
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
   )
 }
 
