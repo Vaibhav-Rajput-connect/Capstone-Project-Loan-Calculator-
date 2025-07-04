@@ -23,10 +23,9 @@ const Mortgage = () => {
   };
 
   return (
-    <div className='' id='Mortgage Calculator'>
+    <div className=''  id='Mortgage Calculator'>
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Mortgage <span className='font-light underline underline-offset-4 under decoration-1 '>Calculator</span></h1>
         <p className='text-center text-gray-500 mb-8 max-w-80 mx-auto'>Quickly calculate your home loan details and make informed decisions with our intuitive mortgage tool.</p>
-
         <form onSubmit={calculateMortgage} className="max-w-md mx-auto bg-white p-6 rounded shadow-md">
           <div className="mb-4">
             <label className="block text-gray-700 font-bold mb-2">Loan Amount (₹):</label>
@@ -68,7 +67,8 @@ const Mortgage = () => {
           </div>
           )}
         </form>
-    </div>
+        </div>
+
   );
 };
 

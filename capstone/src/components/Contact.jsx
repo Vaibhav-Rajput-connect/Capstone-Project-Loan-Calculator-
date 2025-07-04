@@ -31,6 +31,7 @@ const Contact = () => {
       
   return (
     <div className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' id='Contact Us'>
+        
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Contact<span className='font-light underline underline-offset-4 under decoration-1 '>With Us</span></h1>
         <p className='text-center text-gray-500 mb-8 max-w-80 mx-auto'>Get in touch with us to discuss your dream home, project inquiries, or collaboration opportunities.</p>
         <form onSubmit={onSubmit} className='max-w-2xl mx-auto text-gray-600 pt-8'>
