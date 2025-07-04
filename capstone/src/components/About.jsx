@@ -35,7 +35,6 @@ const About = () => {
                     </div>
                 </div>
                 <p className='my-10 max-w-lg'>At Home Harbour, we craft spaces where elegance meets functionality. With over 10+ completed projects and 100+ world-class infrastructure designs, we've earned a reputation for delivering homes that are timeless, thoughtful, and tailored to modern lifestyles. Currently managing 10+ ongoing projects, our vision remains clear — to redefine comfort and elevate living through design excellence and architectural precision.</p>
-                <button className='bg-blue-500 text-white px-8 py-2 rounded'>Learn More</button>
             </div>
         </div>
     </div>
