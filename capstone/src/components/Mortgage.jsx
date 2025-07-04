@@ -66,7 +66,7 @@ const Mortgage = () => {
           <div className="mt-6 text-center">
             <h2 className="text-xl font-bold">Monthly Payment: ₹{monthlyPayment}</h2>
           </div>
-        )}
+          )}
         </form>
     </div>
   );
