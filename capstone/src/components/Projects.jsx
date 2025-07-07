@@ -16,12 +16,16 @@ const prevProject = ()=>{
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Projects  <span className='font-light underline underline-offset-4 under decoration-1 '>Completed</span></h1>
     <p className='text-center text-gray-500 mb-8 max-w-80 mx-auto'>From concept to creation, our projects are designed to inspire, offering modern living spaces rooted in comfort and elegance.
     </p>
-    {/* slider button */}
+
+
+
     <div className='flex justify-end items-center mb-8'>
         <button onClick={prevProject} className='p-3 bg-gray-200 rounded mr-2' aria-label='Previous Project'><img src={assets.left_arrow} alt='previous'/></button>
         <button onClick={nextProject} className='p-3 bg-gray-200 rounded mr-2' aria-label='Next Project'><img src={assets.right_arrow} alt='next'/></button>
     </div>
-    {/* project card */}
+
+
+    
     <div className='overflow-hidden'>
         <div className='flex gap-8 transition-transform duration-500 ease-in-out' style={{transform:`translateX(-${(currentIndex * 80)/cardsToShow}%)`}}>
             {projectsData.map((project,index)=>(
