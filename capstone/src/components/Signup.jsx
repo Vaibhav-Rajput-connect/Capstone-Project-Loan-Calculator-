@@ -1,0 +1,1 @@
+// File can be deleted entirely as the Signup component is no longer required.
