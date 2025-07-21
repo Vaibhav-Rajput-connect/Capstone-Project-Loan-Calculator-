@@ -1,8 +1,11 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import Footer from './Footer.jsx';
+
 
 const About = () => {
   return (
+    <div>
     <div className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden' id='About'>
         <h1 className='text-2xl sm:text-4xl font-bold mb-2'>
             About
@@ -37,6 +40,8 @@ const About = () => {
                 <p className='my-10 max-w-lg'>At Home Harbour, we craft spaces where elegance meets functionality. With over 10+ completed projects and 100+ world-class infrastructure designs, we've earned a reputation for delivering homes that are timeless, thoughtful, and tailored to modern lifestyles. Currently managing 10+ ongoing projects, our vision remains clear — to redefine comfort and elevate living through design excellence and architectural precision.</p>
             </div>
         </div>
+        </div>
+        <Footer/>
     </div>
   )
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import { toast } from 'react-toastify';
+import Footer from './Footer.jsx';
+
 
 const Contact = () => {
         const [result, setResult] = React.useState("");
@@ -51,6 +53,7 @@ const Contact = () => {
             </div>
             <button className='bg-blue-500 text-white py-2 px-12 mb-10 rounded'>{result ? result : 'Send Message'}</button>
         </form>
+        <Footer/>
     </div>
   )
 }

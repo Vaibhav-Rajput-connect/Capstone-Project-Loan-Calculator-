@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,17 +17,16 @@ const Navbar = () => {
   },[isMenuOpen])
 
   return (
-    <div className='absolute top-0 left-0 w-full z-10'>
+    <div className='absolute bg-gray-900 top-0 left-0 w-full z-10'>
         <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg-px-32 bg-transparent'>
-            <img src={assets.logo} alt='' style={{ width: '150px', height: '100px' }} />
-            <ul className='hidden md:flex gap-7 text-white '>
-                <a href='#Header' className='cursor-pointer hover:text-gray-400'>Home</a>
-                <a href='#About' className='cursor-pointer hover:text-gray-400'>About</a>
-                <a href='#Projects' className='cursor-pointer hover:text-gray-400'>Projects</a>
-                <a href='#Mortgage Calculator' className='cursor-pointer hover:text-gray-400'>Mortgage Calculator</a>
+        <img src={assets.logo} alt='' style={{ width: '150px', height: '100px' }} />
+        <ul className='hidden md:flex gap-7 text-white '>
+        <li><Link to="/" className="cursor-pointer">Home</Link></li>
+                <li><Link to="/about" className="cursor-pointer">About</Link></li>
+                <li><Link to="/projects" className="cursor-pointer">Projects</Link></li>
+                <li><Link to="/mortgage" className="cursor-pointer">Mortgage Calculator</Link></li>
             </ul>
-            <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign Up</button>
-            <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign In</button>
+            <Link to="/signup" className='hidden md:block bg-white px-8 py-2 rounded-full'>SignUp</Link>
             <img 
               src={assets.menu_icon} 
               className='md:hidden w-7' 
@@ -45,11 +45,11 @@ const Navbar = () => {
               <img src={assets.cross_icon} className='w-5' alt=''/>
             </div>
             <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
-            <a onClick={() => setIsMenuOpen(false)} href='#Header' className='px-4 py-2 rounded-full inline-block'>Home</a>
-            <a onClick={() => setIsMenuOpen(false)} href='#About' className='px-4 py-2 rounded-full inline-block' >About</a>
-            <a onClick={() => setIsMenuOpen(false)} href='#Projects'  className='px-4 py-2 rounded-full inline-block'>Projects</a>
-            <a onClick={() => setIsMenuOpen(false)} href='#Mortgage Calculator'  className='px-4 py-2 rounded-full inline-block'>Mortgage Calculator</a>
-
+            <li><Link onClick={() => setIsMenuOpen(false)} to="/" className='px-4 py-2 rounded-full inline-block'>Home</Link></li>
+            <li><Link onClick={() => setIsMenuOpen(false)} to="/about" className='px-4 py-2 rounded-full inline-block' >About</Link></li>
+            <li><Link onClick={() => setIsMenuOpen(false)} to="/projects"  className='px-4 py-2 rounded-full inline-block'>Projects</Link></li>
+            <li><Link onClick={() => setIsMenuOpen(false)} to="/mortgage"  className='px-4 py-2 rounded-full inline-block'>Mortgage Calculator</Link></li>
+            <li><Link onClick={() => setIsMenuOpen(false)} to="/signup" className='px-4 py-2 rounded-full inline-block'>SignUp</Link></li>
             </ul>
 
         </div>
@@ -57,4 +57,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
