@@ -25,7 +25,8 @@ const Navbar = () => {
                 <a href='#Projects' className='cursor-pointer hover:text-gray-400'>Projects</a>
                 <a href='#Mortgage Calculator' className='cursor-pointer hover:text-gray-400'>Mortgage Calculator</a>
             </ul>
-            <button className='hidden md:block bg-white px-8 py-2 rounded-full'>SignUp</button>
+            <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign Up</button>
+            <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign In</button>
             <img 
               src={assets.menu_icon} 
               className='md:hidden w-7' 
