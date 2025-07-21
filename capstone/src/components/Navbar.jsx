@@ -26,7 +26,6 @@ const Navbar = () => {
                 <li><Link to="/projects" className="cursor-pointer">Projects</Link></li>
                 <li><Link to="/mortgage" className="cursor-pointer">Mortgage Calculator</Link></li>
             </ul>
-            <Link to="/signup" className='hidden md:block bg-white px-8 py-2 rounded-full'>SignUp</Link>
             <img 
               src={assets.menu_icon} 
               className='md:hidden w-7' 

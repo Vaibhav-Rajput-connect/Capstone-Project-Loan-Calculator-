@@ -6,7 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Mortgage from './components/Mortgage';
 import Contact from './components/Contact';
-import Signup from './components/Signup';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/mortgage" element={<Mortgage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     </>
