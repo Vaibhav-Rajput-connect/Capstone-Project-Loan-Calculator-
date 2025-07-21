@@ -1,7 +1,7 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 import Footer from './Footer.jsx';
-
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
         const [result, setResult] = React.useState("");
@@ -32,6 +32,7 @@ const Contact = () => {
         }
       
   return (
+    <div>
     <div className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' id='Contact Us'>
         
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Contact<span className='font-light underline underline-offset-4 under decoration-1 '>With Us</span></h1>
@@ -53,6 +54,7 @@ const Contact = () => {
             </div>
             <button className='bg-blue-500 text-white py-2 px-12 mb-10 rounded'>{result ? result : 'Send Message'}</button>
         </form>
+        </div>
         <Footer/>
     </div>
   )

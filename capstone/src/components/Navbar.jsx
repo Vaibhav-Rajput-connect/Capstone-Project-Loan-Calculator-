@@ -49,7 +49,6 @@ const Navbar = () => {
             <li><Link onClick={() => setIsMenuOpen(false)} to="/about" className='px-4 py-2 rounded-full inline-block' >About</Link></li>
             <li><Link onClick={() => setIsMenuOpen(false)} to="/projects"  className='px-4 py-2 rounded-full inline-block'>Projects</Link></li>
             <li><Link onClick={() => setIsMenuOpen(false)} to="/mortgage"  className='px-4 py-2 rounded-full inline-block'>Mortgage Calculator</Link></li>
-            <li><Link onClick={() => setIsMenuOpen(false)} to="/signup" className='px-4 py-2 rounded-full inline-block'>SignUp</Link></li>
             </ul>
 
         </div>
